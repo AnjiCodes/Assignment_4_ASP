@@ -11,10 +11,10 @@ namespace Assignment_4_ASP
         {
             // Web API configuration and services
 
+            config.EnableCors();
+
             // Web API routes
             config.MapHttpAttributeRoutes();
-
-            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
